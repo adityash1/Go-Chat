@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import { connect, sendMsg } from "./api";
+import Header from "./components/Header";
 
 const App = () => {
   useEffect(() => {
@@ -14,7 +15,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <button onClick={send}>Send</button>
+      <Header />
+      <button onClick={send}>Hit</button>
     </div>
   );
 };
